@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My New Hugo Site</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" href="/OpenSR-test/css/style.css">
+</head><body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary nav nav_principal fixed-top">
+  <div class="container-fluid div-nav" style="width: 60%;">
+    <a class="navbar-brand fs-4 a" href="/" style="margin-left: 30px; font-weight: 700; color: #d6d6d6;">
+      <img src="/OpenSR-test/imgs/logo_opensrtest.png" style="height:30px;">
+      OpenSR test
+    </a>
+  </div>
+
+  
+  <div class="container-fluid" style="width: 15%; margin-left: 30px;">
+    <form class="d-flex search-form" role="search">
+      <div class="input-group">
+        <span class="input-group-text"><i class="fas fa-search"></i></span>
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </div>
+    </form>
+  </div>
+  
+
+  <div class="div" style="width: 15%;  margin-left: 55px;">
+    <a href="https://github.com/ESAOpenSR/opensr-test" title="Go to repository" class="md-source"
+      data-md-component="source">
+      <div class="md-source__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path
+            d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z">
+          </path>
+        </svg>
+      </div>
+      <div class="md-source__repository" data-md-state="done" style="color: #fff;">
+        OpenSR test
+        <ul class="md-source__facts">
+          <li class="md-source__fact md-source__fact--stars">
+            <i class="far fa-star"></i> 2
+          </li>
+          <li class="md-source__fact md-source__fact--forks">
+            <i class="fas fa-code-branch"></i> 0
+          </li>
+
+        </ul>
+      </div>
+    </a>
+  </div>
+  <div class="div2" style="width: 10%;">
+    <p><i class="far fa-moon" style="color: #ffffff; font-size: 1.4em; margin-top: 13px;"></i>
+    </p>
+  </div>
+</nav>
+
+  <main>
+    <div class="container-fluid">
+      <div class="row" style="margin-top: 70px;">
+
+        
+        <div style="width: 23%;">
+          <style>
+  .aside {
+    max-height: 80vh;
+     
+    overflow-y: auto;
+     
+  }
+
+  .nested-nav {
+    list-style-type: none;
+     
+  }
+</style>
+
+<aside class="aside">
+  <div class="sidebar-sticky aside">
+    <ul class="nav flex-column custom-nav">
+      <li class="nav-item">
+        <a class="nav-link" id="subtitle" data-toggle="collapse">
+          <strong>Home</strong>
+        </a>
+        <div class="collapse show" id="homeSection">
+          <ul class="nested-nav" style="margin-left: -8px;">
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/home/contributing">
+                Contributing
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/home/code_of_conduct">
+                Code of Conduct
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/home/changelog">
+                Changelog
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/home/license" style="margin-bottom: 15px;">
+                License
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="subtitle" data-toggle="collapse">
+          <strong>Properties</strong>
+        </a>
+        <div class="collapse show" id="propertiesSection">
+          <ul class="nested-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/properties/main" style="margin-bottom: 15px;">
+                Main
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="subtitle" data-toggle="collapse" href="#apiSection">
+          <strong>API</strong>
+        </a>
+        <div class="collapse show" id="apiSection">
+          <ul class="nested-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/api/model_parameters">
+                Model parameters
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/api/setup_method">
+                Setup method
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/api/compute_method">
+                Compute method
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/api/summary_method">
+                Summary method
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/api/results_attributes" style="margin-bottom: 20px;">
+                Results attributes
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+
+
+
+
+      <li class="nav-item">
+        <a class="nav-link" id="subtitle" data-toggle="collapse" href="#datasetSection">
+          <strong>Dataset</strong>
+        </a>
+        <div class="collapse show" id="datasetSection">
+          <ul class="nested-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/dataset/home">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/dataset/naip">
+                NAIP
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/dataset/spot">
+                SPOT
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/dataset/venµs" style="margin-bottom: 15px;">
+                Venµs
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+
+
+
+
+
+
+      <li class="nav-item">
+        <a class="nav-link" id="subtitle" data-toggle="collapse" href="#metricsSection">
+          <strong>Metrics</strong>
+        </a>
+        <div class="collapse show" id="metricsSection">
+          <ul class="nested-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/metrics/consistency">
+                Consistency metrics
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/metrics/distance">
+                Distance metrics
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/metrics/correctness" style="margin-bottom: 15px;">
+                Correctness metrics
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+
+
+
+
+      <li class="nav-item">
+        <a class="nav-link" id="subtitle" data-toggle="collapse" href="#examplesSection">
+          <strong>Examples</strong>
+        </a>
+        <div class="collapse show" id="examplesSection">
+          <ul class="nested-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/examples/pytorch_models">
+                PyTorch models
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/examples/tensorflow_models">
+                TensorFlow models
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/examples/diffuser_models">
+                Diffuser models
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/examples/multi_image_sr_model">
+                Multi-image SR model
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/examples/create_correctness_animation"
+                style="margin-bottom: 15px;">
+                Create Correctness animation
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+
+
+      <li class="nav-item">
+        <a class="nav-link" id="subtitle" data-toggle="collapse" href="#benchmarksSection">
+          <strong>Benchmarks</strong>
+        </a>
+        <div class="collapse show" id="benchmarksSection">
+          <ul class="nested-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/OpenSR-test/benchmarks">
+                Benchmarks
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</aside>
+        </div>
+
+        
+        <div style="width: 54%; margin-top: 40px; margin-bottom: 10px;" id="dynamic-content">
+
+
+<h2><a href="/OpenSR-test/dataset/home/">Home</a></h2>
+The opensr-test Dataset The opensr-test dataset was meticulously prepared with the primary aim of maintaining the maximum possible consistency between the LR and HR pair images. The entire process can be divided into three steps: selection of potential LR-HR pairs, harmonization, and visual inspection, as depicted in Figure above. For the LR-HR pair selection, we utilized Sentinel-2 L2A as the LR image and three different pre-processed HR sources: NAIP, SPOT and Venus.
+
+<h2><a href="/OpenSR-test/dataset/naip/">Naip</a></h2>
+The NAIP product Identification Information Citation: Citation Information: Originator: USDA-FSA-APFO Aerial Photography Field Office Publication Date: 20111108 Title: NAIP Digital Ortho Photo Image Geospatial Data Presentation Form: remote-sensing image Publication Information: Publication Place: Salt Lake City, Utah Publisher: USDA-FSA-APFO Aerial Photography Field Office Description Abstract: This data set contains imagery from the National Agriculture Imagery Program (NAIP). NAIP acquires digital ortho imagery during the agricultural growing seasons in the continental U.
+
+<h2><a href="/OpenSR-test/dataset/spot/">Spot</a></h2>
+The SPOT product The SPOT product were obtained from the Worldstrat dataset. The RGBN bands were downsampled to 1.5 m/pixel using the band pan-sharpening method defined in the worldstrat repository, and then to 2.5 m/pixel using bilinear interpolation with the intention to provide a 4x super-resolution factor. Due to the irreversible nature of the pansharpening method, which is theoretically applicable primarily to RGB bands, a significant degradation of spectral information occurs in most images within the worldstrat collection.
+
+<h2><a href="/OpenSR-test/dataset/ven%C2%B5s/">Venµs</a></h2>
+The Venµs product The Venµs images featured in the study were sourced from the Sen2Venµs dataset. Notably, as of the publication of this article, it is the only dataset that offers a genuine harmonization pipeline. More details about the harmonization process can be found in the Sen2Venµs paper.
+
+
+        </div>
+
+        
+        
+        
+
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      
+      if (localStorage.getItem('dark-mode') === 'true') {
+        document.body.classList.add('dark-mode');
+        document.querySelector('.fa-moon').classList.add('fa-sun');
+        document.querySelector('.fa-moon').classList.remove('fa-moon');
+      }
+    });
+
+    document.querySelector('.fa-moon, .fa-sun').addEventListener('click', function () {
+      document.body.classList.toggle('dark-mode');
+      this.classList.toggle('fa-moon');
+      this.classList.toggle('fa-sun');
+
+      
+      localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode'));
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      const tocLinks = document.querySelectorAll('.aside2 #TableOfContents a');
+
+      tocLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault(); 
+
+          const targetId = this.getAttribute('href').substring(1);
+          const target = document.getElementById(targetId);
+
+          if (target) {
+            
+            const top = target.getBoundingClientRect().top + window.pageYOffset - 30; 
+
+            window.scrollTo({ top: top, behavior: 'smooth' });
+          }
+        });
+      });
+    });
+
+  </script>
+
+  
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+

@@ -61,8 +61,34 @@
       localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode'));
     });
 
+    document.addEventListener('DOMContentLoaded', function () {
+      // Selecciona todos los enlaces de la tabla de contenidos
+      const tocLinks = document.querySelectorAll('.aside2 #TableOfContents a');
+
+      tocLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault(); // Previene el comportamiento predeterminado de saltar directamente al enlace
+
+          const targetId = this.getAttribute('href').substring(1);
+          const target = document.getElementById(targetId);
+
+          if (target) {
+            // Calcula la posición deseada para el desplazamiento
+            const top = target.getBoundingClientRect().top + window.pageYOffset - 30; // -30 para ajustar el offset deseado
+
+            window.scrollTo({ top: top, behavior: 'smooth' });
+          }
+        });
+      });
+    });
 
   </script>
+
+  <!-- Agregar antes de cerrar el </body> -->
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
 </body>
 
 </html>
