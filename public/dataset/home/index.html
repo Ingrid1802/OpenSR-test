@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My New Hugo Site</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+</head><body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary nav nav_principal fixed-top">
+  <div class="container-fluid div-nav" style="width: 60%;">
+    <a class="navbar-brand fs-4 a" href="/" style="margin-left: 30px; font-weight: 700; color: #d6d6d6;">
+      <img src="/imgs/logo_opensrtest.png" style="height:30px;">
+      OpenSR test
+    </a>
+  </div>
+
+  
+  <div class="container-fluid" style="width: 15%; margin-left: 30px;">
+    <form class="d-flex search-form" role="search">
+      <div class="input-group">
+        <span class="input-group-text"><i class="fas fa-search"></i></span>
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </div>
+    </form>
+  </div>
+  
+
+  <div class="div" style="width: 15%;  margin-left: 55px;">
+    <a href="https://github.com/ESAOpenSR/opensr-test" title="Go to repository" class="md-source"
+      data-md-component="source">
+      <div class="md-source__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path
+            d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z">
+          </path>
+        </svg>
+      </div>
+      <div class="md-source__repository" data-md-state="done" style="color: #fff;">
+        OpenSR test
+        <ul class="md-source__facts">
+          <li class="md-source__fact md-source__fact--stars">
+            <i class="far fa-star"></i> 2
+          </li>
+          <li class="md-source__fact md-source__fact--forks">
+            <i class="fas fa-code-branch"></i> 0
+          </li>
+
+        </ul>
+      </div>
+    </a>
+  </div>
+  <div class="div2" style="width: 10%;">
+    <p><i class="far fa-moon" style="color: #ffffff; font-size: 1.4em; margin-top: 13px;"></i>
+    </p>
+  </div>
+</nav>
+
+  <main>
+    <div class="container-fluid">
+      <div class="row" style="margin-top: 70px;">
+
+        
+        <div style="width: 23%;">
+          <style>
+  .aside {
+    max-height: 80vh;
+     
+    overflow-y: auto;
+     
+  }
+
+  .nested-nav {
+    list-style-type: none;
+     
+  }
+</style>
+
+<aside class="aside">
+  <div class="sidebar-sticky aside">
+    <ul class="nav flex-column custom-nav">
+      <li class="nav-item">
+        <a class="nav-link" id="subtitle" data-toggle="collapse">
+          <strong>Home</strong>
+        </a>
+        <div class="collapse show" id="homeSection">
+          <ul class="nested-nav" style="margin-left: -8px;">
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/home/contributing">
+                Contributing
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/home/code_of_conduct">
+                Code of Conduct
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/home/changelog">
+                Changelog
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/home/license" style="margin-bottom: 15px;">
+                License
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="subtitle" data-toggle="collapse">
+          <strong>Properties</strong>
+        </a>
+        <div class="collapse show" id="propertiesSection">
+          <ul class="nested-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/properties/main" style="margin-bottom: 15px;">
+                Main
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="subtitle" data-toggle="collapse" href="#apiSection">
+          <strong>API</strong>
+        </a>
+        <div class="collapse show" id="apiSection">
+          <ul class="nested-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/api/model_parameters">
+                Model parameters
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/api/setup_method">
+                Setup method
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/api/compute_method">
+                Compute method
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/api/summary_method">
+                Summary method
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/api/results_attributes" style="margin-bottom: 20px;">
+                Results attributes
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+
+
+
+
+      <li class="nav-item">
+        <a class="nav-link" id="subtitle" data-toggle="collapse" href="#datasetSection">
+          <strong>Dataset</strong>
+        </a>
+        <div class="collapse show" id="datasetSection">
+          <ul class="nested-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/dataset/home">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/dataset/naip">
+                NAIP
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/dataset/spot">
+                SPOT
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/dataset/venµs" style="margin-bottom: 15px;">
+                Venµs
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+
+
+
+
+
+
+      <li class="nav-item">
+        <a class="nav-link" id="subtitle" data-toggle="collapse" href="#metricsSection">
+          <strong>Metrics</strong>
+        </a>
+        <div class="collapse show" id="metricsSection">
+          <ul class="nested-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/metrics/consistency">
+                Consistency metrics
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/metrics/distance">
+                Distance metrics
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/metrics/correctness" style="margin-bottom: 15px;">
+                Correctness metrics
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+
+
+
+
+      <li class="nav-item">
+        <a class="nav-link" id="subtitle" data-toggle="collapse" href="#examplesSection">
+          <strong>Examples</strong>
+        </a>
+        <div class="collapse show" id="examplesSection">
+          <ul class="nested-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/examples/pytorch_models">
+                PyTorch models
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/examples/tensorflow_models">
+                TensorFlow models
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/examples/diffuser_models">
+                Diffuser models
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/examples/multi_image_sr_model">
+                Multi-image SR model
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/examples/create_correctness_animation" style="margin-bottom: 15px;">
+                Create Correctness animation
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+
+
+      <li class="nav-item">
+        <a class="nav-link" id="subtitle" data-toggle="collapse" href="#benchmarksSection">
+          <strong>Benchmarks</strong>
+        </a>
+        <div class="collapse show" id="benchmarksSection">
+          <ul class="nested-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/benchmarks">
+                Benchmarks
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</aside>
+        </div>
+
+        
+        <div style="width: 54%; margin-top: 40px; margin-bottom: 10px;" id="dynamic-content">
+<h1 id="heading"></h1>
+<h2 id="the-opensr-test-dataset">The opensr-test Dataset</h2>
+<p align="center">
+    <a href="/docs/api.md"><img src="../images/paper_figure01.png" alt="opensr-test"></a>
+</p>
+<p>The opensr-test dataset was meticulously prepared with the primary aim of maintaining the maximum possible consistency between the <code>LR</code> and <code>HR</code> pair images. The entire process can be divided into three steps: selection of potential LR-HR pairs, harmonization, and visual inspection, as depicted in Figure above. For the LR-HR pair selection, we utilized Sentinel-2 L2A as the LR image and three different pre-processed HR sources: NAIP, SPOT and Venus. In order to ensure similar atmospheric conditions, we started to discard all the LR-HR pairs that did not count on the same day. Additionally, LR-HR pairs with over 0 % cloud cover in the <code>LR</code> image were automatically discarded using a cloud detection algorithm trained on CloudSEN12. The final dataset characteristics are summarized in the table below.</p>
+<table>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Scale</th>
+<th># Scenes</th>
+<th>HRsize</th>
+<th>HR Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAIP</td>
+<td>x4</td>
+<td>30</td>
+<td>512</td>
+<td>USDA Farm Production and Conservation - Business Center, Geospatial Enterprise Operations.</td>
+</tr>
+<tr>
+<td>SPOT</td>
+<td>x4</td>
+<td>12</td>
+<td>512</td>
+<td>European Space Agency, 2017, SPOT 1-5 ESA</td>
+</tr>
+<tr>
+<td>Mini-SEN2VENµS</td>
+<td>x2</td>
+<td>59</td>
+<td>512</td>
+<td>Vegetation and Environment monitoring on a New Micro-Satellite (SEN2VENμS).</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The <code>opensr-test</code> dataset API provides a simple interface to download the dataset.  All the dataset are stored in the HuggingFace Datasets Repository <a href="https://huggingface.co/csaybar/opensr-test">https://huggingface.co/csaybar/opensr-test</a>. The following code snippet shows how to download the dataset and load it into memory.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> opensr_test
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Load the spot dataset</span>
+</span></span><span style="display:flex;"><span>lr, hr, landuse, parameters <span style="color:#f92672">=</span> opensr_test<span style="color:#f92672">.</span>load(<span style="color:#e6db74">&#34;spot&#34;</span>)<span style="color:#f92672">.</span>values()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Load the venus dataset</span>
+</span></span><span style="display:flex;"><span>lr, hr, landuse, parameters <span style="color:#f92672">=</span> opensr_test<span style="color:#f92672">.</span>load(<span style="color:#e6db74">&#34;venus&#34;</span>)<span style="color:#f92672">.</span>values()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Load the naip dataset</span>
+</span></span><span style="display:flex;"><span>lr, hr, landuse, parameters <span style="color:#f92672">=</span> opensr_test<span style="color:#f92672">.</span>load(<span style="color:#e6db74">&#34;naip&#34;</span>)<span style="color:#f92672">.</span>values()
+</span></span></code></pre></div><h2 id="opensr_testload-function"><code>opensr_test.load</code> Function</h2>
+<p>The <code>opensr_test.load</code> function is a key utility in the <code>opensr-test</code> package, offering a streamlined solution for downloading and loading datasets. It returns a dictionary containing the following keys:</p>
+<ul>
+<li>
+<p><code>lr</code>: LR images sourced from Sentinel-2 L2A, representing the base resolution for analysis.</p>
+</li>
+<li>
+<p><code>hr</code>: HR images that are harmonized in reference to the <code>LR</code> images. These HR images can br from sources like NAIP, SPOT, or VENUS according to the dataset parameter.</p>
+</li>
+<li>
+<p><code>landuse</code>: Land use classification images, derived from the ESA Land Cover map, providing contextual information about the geographical area covered by the LR and HR images.</p>
+</li>
+<li>
+<p><code>parameters</code>: A datamodel encompassing various fields that guide image processing and analysis. These include:</p>
+<ul>
+<li>
+<p><code>blur_gaussian_sigma</code>: Specifies the standard deviation for a Gaussian 2D filter, which can be used to blur the <code>hr</code> images. This parameter is fine-tuned comparing the LR and HR images, optimized against the L1 loss metric.</p>
+</li>
+<li>
+<p><code>stability_threshold</code>: A threshold value used to differentiate between stable and unstable pixels. Stable pixels are those that exhibit minimal or no change between the <code>lr</code> and <code>hr</code> images. This threshold is established through visual inspections performed by three remote sensing experts on each image.</p>
+</li>
+<li>
+<p><code>correctness_params</code>: Global parameters delineating the spaces for omission, improvement and hallucinations. These are determined through the expert analysis of three different specialists, ensuring a rigorous and comprehensive evaluation.</p>
+</li>
+<li>
+<p><code>downsample_method</code>: The recommended approach for downsampling the <code>hr</code> images to a lower resolution.</p>
+</li>
+<li>
+<p><code>upsample_method</code>: The suggested technique for upsampling the <code>lr</code> images to a higher resolution.</p>
+</li>
+</ul>
+</li>
+</ul>
+
+
+
+        </div>
+
+        
+        
+        <aside class="aside2" style="width: 23%;">
+          <div class="sidebar-sticky aside">
+            
+            <h6 class="text-muted" style="margin-bottom: 0; height: 30px;">Table of contents</h6>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-opensr-test-dataset">The opensr-test Dataset</a></li>
+    <li><a href="#opensr_testload-function"><code>opensr_test.load</code> Function</a></li>
+  </ul>
+</nav>
+            
+          </div>
+        </aside>
+
+        
+
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      
+      if (localStorage.getItem('dark-mode') === 'true') {
+        document.body.classList.add('dark-mode');
+        document.querySelector('.fa-moon').classList.add('fa-sun');
+        document.querySelector('.fa-moon').classList.remove('fa-moon');
+      }
+    });
+
+    document.querySelector('.fa-moon, .fa-sun').addEventListener('click', function () {
+      document.body.classList.toggle('dark-mode');
+      this.classList.toggle('fa-moon');
+      this.classList.toggle('fa-sun');
+
+      
+      localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode'));
+    });
+
+
+  </script>
+</body>
+
+</html>
+
+
+
+
+

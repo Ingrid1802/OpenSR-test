@@ -1,0 +1,270 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  background-color: #f0f0f0 !important;
+  padding: 10px;
+  border: none;
+  color: #000 !important;
+}
+
+.nav_principal {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/*buscador - nav*/
+
+.search-form {
+  height: 20px;
+  margin-top: -18px;
+}
+
+.search-form .form-control {
+  background-color: #272626;
+  color: white;
+}
+
+.search-form .input-group-text {
+  background-color: #272626;
+  color: white;
+}
+
+.search-form .form-control::placeholder {
+  color: #ddd;
+}
+
+.search-form .input-group .input-group-text {
+  border-right: 0;
+}
+
+.search-form .input-group .form-control {
+  border-left: 0;
+}
+
+.search-form .input-group .form-control,
+.search-form .input-group .input-group-text {
+  border-radius: 10px;
+}
+
+.search-form .input-group:hover .form-control {
+  background-color: #3a3a3a;
+}
+
+.search-form .input-group:hover .input-group-text {
+  background-color: #3a3a3a;
+}
+
+
+.search-form .form-control:focus,
+.search-form .input-group-text:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: inherit;
+}
+
+/*fin buscador - nav*/
+
+/*OpenSR test - nav*/
+
+.md-source {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: block;
+  font-size: .65rem;
+  line-height: 1.2;
+  outline-color: var(--md-accent-fg-color);
+  transition: opacity .25s;
+  white-space: nowrap;
+}
+
+.md-source__icon {
+  display: inline-block;
+  height: 2.4rem;
+  vertical-align: middle;
+  width: 2rem;
+}
+
+
+.md-source__icon svg {
+  fill: #fff;
+}
+
+.md-source__repository {
+  display: inline-block;
+  max-width: calc(100% - 1.2rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  font-size: 1.3em;
+}
+
+.md-source__fact {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.md-source__facts {
+  font-size: 1em;
+  list-style-type: none;
+  margin: 0.1rem 0 0;
+  opacity: .75;
+  overflow: hidden;
+  padding: 0;
+}
+
+.fa-star {
+  color: #d9dbde;
+}
+
+.fa-code-fork {
+  color: #eae7dc;
+}
+
+/* fin de OpenSR test - nav*/
+
+
+
+
+
+
+
+/*left_nav.html */
+.custom-nav .nav-link {
+  color: #585656 !important;
+  font-size: 1em !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.custom-nav .nav-link:hover {
+  color: #441bfc !important;
+}
+
+.custom-link {
+  width: 100% !important;
+  text-align: left !important;
+}
+
+.sidebar-sticky h6 {
+  color: #000 !important;
+  width: 100% !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.aside {
+  background-color: #fff !important;
+  position: sticky;
+  top: 100px;
+}
+
+.custom-nav .nav-item {
+  margin-bottom: -10px !important;
+}
+
+#subtitle {
+  color: #000 !important;
+}
+
+/*fin de left_nav.html */
+
+/*nav de la rerecha - baseof.html*/
+.aside2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.aside2 ul li {
+  margin-bottom: 8px;
+}
+
+
+.aside2 ul li a {
+  color: #585656 !important;
+  text-decoration: none;
+}
+
+.aside2 .sidebar-sticky ul li {
+  margin-left: 10px;
+}
+
+
+.aside2 ul li a:hover {
+  color: #441bfc !important;
+}
+
+.custom-nav .nav-link .active {
+  color: red !important;
+}
+
+/*fin del nav de la rerecha - baseof.html*/
+
+#dynamic-content {
+  min-height: 90vh;
+}
+
+
+
+
+
+
+
+/*edicion de la barra de left_nav*/
+
+.aside::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Estilo para el "track" o riel de la barra de desplazamiento */
+.aside::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Estilo para la "thumb" o barra de desplazamiento */
+.aside::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Estilo para la "thumb" al pasar el cursor sobre ella */
+.aside::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+.dark-mode,
+.dark-mode .aside,
+.dark-mode .aside2,
+.dark-mode .aside,
+.dark-mode .aside2,
+.dark-mode .aside h6,
+.dark-mode .aside2 h6,
+.dark-mode .aside li,
+.dark-mode .aside2 li,
+.dark-mode .aside li a,
+.dark-mode .aside2 li a,
+.dark-mode .aside ul,
+.dark-mode .aside2 ul,
+.dark-mode #TableOfContents {
+  background-color: #302f33;
+  color: #fff !important;
+}
+
+.dark-mode #subtitle {
+  color: #fff !important;
+}
+
+.aside2 #TableOfContents ul li:last-child,
+.aside2 #TableOfContents ul:last-of-type {
+  margin-bottom: 0;
+}
+
+.dark-mode .aside::-webkit-scrollbar-track {
+  background: #333333;
+  border-radius: 10px;
+}
