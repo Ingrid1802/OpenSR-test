@@ -17,7 +17,7 @@ $H = d_{im} + d_{om} - 1$
 $Improvement = d_{im} + d_{om}*(1 - e^{-\gamma H})$
 
 <p align="center">
-  <img src="../images/improvement.png" alt="correctness_metric">
+  <img src="/OpenSR-test/imgs/improvement.png" alt="correctness_metric">
 </p>
 
 Where:
@@ -32,7 +32,7 @@ $H = d_{im} + d_{om} - 1$
 $Omission = d_{om} + d_{im}*(1 - e^{-\gamma H})$
 
 <p align="center">
-  <img src="../images/omission.png" alt="correctness_metric">
+  <img src="/OpenSR-test/imgs/omission.png" alt="correctness_metric">
 </p>
 
 **Hallucination**: Low values shows the areas where the SR model has introduced high-frequency information that is not present in the HR image. The equation for calculating hallucination is:
@@ -40,5 +40,5 @@ $Omission = d_{om} + d_{im}*(1 - e^{-\gamma H})$
 $Hallucination = e^{-\gamma * d_{om} * d_{im}}$
 
 <p align="center">
-  <img src="../images/hallucination.png" alt="correctness_metric">
+  <img src="/OpenSR-test/imgs/hallucination.png" alt="correctness_metric">
 </p>

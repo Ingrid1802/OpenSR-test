@@ -13,7 +13,7 @@ draft = false
 Assessing the quality of a SR model is a challenging task. Drawing inspiration from Wald et al. 1997, who outlined key properties for ideal pansharpening algorithms, we discuss the three properties that a SR model must satisfy to be considered a *good* SR model. These properties are: consistency, synthesis, and correctness.
 
 <p align="center">
-  <img src="/imgs/properties.png" alt="properties" width="65%">
+  <img src="/OpenSR-test/imgs/properties.png" alt="properties" width="65%">
 </p>
 
 ### First property (Consistency){#first-property-consistency}

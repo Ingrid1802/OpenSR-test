@@ -189,6 +189,6 @@ Metadata obtained from: [https://naipeuwest.blob.core.windows.net/naip/v002/ut/2
 
 
 <p align="center">
-  <img src="../images/naip1.png" align="left" width="40%"/>
-  <img src="../images/naip2.png" align="right" width="40%"/>
+  <img src="/OpenSR-test/imgs/naip1.png" align="left" width="40%"/>
+  <img src="/OpenSR-test/imgs/naip2.png" align="right" width="40%"/>
 </p>
