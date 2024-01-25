@@ -10,7 +10,7 @@ draft = false
 ## The opensr-test Dataset{#the-opensr-test-dataset}
 
 <p align="center">
-    <a href="/docs/api.md"><img src="/OpenSR-test/imgs/paper_figure01.png" alt="opensr-test" style="width=100%"></a>
+    <a href="/docs/api.md"><img src="/OpenSR-test/imgs/paper_figure01.png" alt="opensr-test" style="width: 100%;"></a>
 </p>
 
 The opensr-test dataset was meticulously prepared with the primary aim of maintaining the maximum possible consistency between the `LR` and `HR` pair images. The entire process can be divided into three steps: selection of potential LR-HR pairs, harmonization, and visual inspection, as depicted in Figure above. For the LR-HR pair selection, we utilized Sentinel-2 L2A as the LR image and three different pre-processed HR sources: NAIP, SPOT and Venus. In order to ensure similar atmospheric conditions, we started to discard all the LR-HR pairs that did not count on the same day. Additionally, LR-HR pairs with over 0 % cloud cover in the `LR` image were automatically discarded using a cloud detection algorithm trained on CloudSEN12. The final dataset characteristics are summarized in the table below.

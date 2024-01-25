@@ -271,7 +271,14 @@ pre {
 
 .dark-mode th {
   background-color: #292828;
+}
 
+.dark-mode details[open] {
+  background-color: #535353;
+}
+
+.dark-mode details {
+  background-color: #535353;
 }
 
 /*fin de stilos para modo dark*/
@@ -303,9 +310,6 @@ th {
 
 
 
-
-
-
 details {
   border: 1px solid #ccc;
   padding: 10px;
@@ -328,11 +332,6 @@ summary::-webkit-details-marker {
 }
 
 /* Agrega estilos para el ícono o marcador que desees utilizar */
-summary:before {
-  content: '▶';
-  padding-right: 5px;
-}
-
 details[open] summary:before {
   content: '▼';
 }

@@ -13,5 +13,5 @@ The SPOT product were obtained from the Worldstrat dataset. The RGBN bands were 
 Due to the irreversible nature of the pansharpening method, which is theoretically applicable primarily to RGB bands, a significant degradation of spectral information occurs in most images within the worldstrat collection. As a result of this degradation, only 12 Regions of Interest (ROIs) have retained sufficient quality.
 
 <p align="center">
-  <img src="/OpenSR-test/imgs/spot1.png" style="width=100%"/>  
+  <img src="/OpenSR-test/imgs/spot1.png" style="width: 100%;"/>  
 </p>
