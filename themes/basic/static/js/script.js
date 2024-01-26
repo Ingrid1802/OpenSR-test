@@ -42,12 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log("DOM completamente cargado");
 
   // Cambia el color al hacer clic
-  const navLinks = document.querySelectorAll('.aside2 .nav-link');
-  console.log("Enlaces encontrados:", navLinks);
+  const tocLinks = document.querySelectorAll('.aside2 #TableOfContents a');
+  console.log("Enlaces encontrados:", tocLinks);
 
-  navLinks.forEach(link => {
+  tocLinks.forEach(link => {
     link.addEventListener('click', function () {
-      navLinks.forEach(navLink => navLink.classList.remove('current-right-link'));
+      tocLinks.forEach(navLink => navLink.classList.remove('current-right-link'));
       this.classList.add('current-right-link');
       console.log("Enlace clickeado:", this);
     });
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    navLinks.forEach(link => {
+    tocLinks.forEach(link => {
       link.classList.remove('current-right-link');
       if (link.getAttribute('href') === `#${currentSectionId}`) {
         link.classList.add('current-right-link');
