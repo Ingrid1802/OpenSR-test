@@ -343,12 +343,12 @@ details[open] summary:before {
 
 
 .current-link {
-  color: #6241f7;
+  color: #6241f7 !important;
   font-weight: bold;
 }
 
 
 .current-right-link {
-  color: #6241f7;
+  color: #6241f7 !important;
   font-weight: bold;
 }
