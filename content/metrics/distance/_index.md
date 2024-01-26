@@ -17,12 +17,12 @@ to the HR product or to the LR product. The distance metrics are calculated two 
 
 **Cross-sensor MTF**: The "Cross-sensor Modulation Transfer Function (MTF)" involves comparing the MTF between two different sensors. The MTF itself is a critical measure of an imaging system's capability to resolve detail in an object (ground sampling distance). Analyzing the curve permit us to understand how effectively the SR model can reproduce detail at different scales. The reported metric is the comparison of the area under the MTF curve between the LR and SR images, from the Nyquist frequency of LR (Sentinel-2) to the super-resolved image.
 
-$\text{Cross-sensor MTF} = \int_{f_{\text{Nyquist, LR}}}^{f_{\text{max, SR}}} MTF_{\text{LR}}(f) - MTF_{\text{SR}}(f) \, df$
+$$\text{Cross-sensor MTF} = \int_{f_{\text{Nyquist, LR}}}^{f_{\text{max, SR}}} MTF_{\text{LR}}(f) - MTF_{\text{SR}}(f) \, df$$
 
 
 **LPIPS**: The Learned Perceptual Image Patch Similarity (LPIPS) metric is a perceptual metric that aims to quantify the perceptual similarity between two images. The LPIPS metric is based on a deep neural network that was trained to predict perceptual similarity scores. The reported metric is the average LPIPS score between the LR and SR images.
 
-$\text{LPIPS} = \sum_{l=1}^{L} w_l \cdot \frac{1}{H_lW_l} \sum_{h=1}^{H_l} \sum_{w=1}^{W_l} \| \phi_l(I_1)_{h,w} - \phi_l(I_2)_{h,w} \|_2^2$
+$$\text{LPIPS} = \sum_{l=1}^{L} w_l \cdot \frac{1}{H_lW_l} \sum_{h=1}^{H_l} \sum_{w=1}^{W_l} \| \phi_l(I_1)_{h,w} - \phi_l(I_2)_{h,w} \|_2^2$$
 
 In this equation:
     

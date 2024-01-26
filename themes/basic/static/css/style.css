@@ -337,7 +337,12 @@ summary::before {
   padding-right: 5px;
 }
 
-/* Agrega estilos para el ícono o marcador que desees utilizar */
 details[open] summary:before {
   content: '▼';
+}
+
+
+.current-link {
+  color: #6241f7;
+  font-weight: bold;
 }
