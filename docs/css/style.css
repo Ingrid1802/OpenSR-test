@@ -134,13 +134,13 @@ pre {
 
 /*left_nav.html */
 .custom-nav .nav-link {
-  color: #585656 !important;
+  color: #585757;
   font-size: 1em !important;
   font-family: 'Roboto', sans-serif;
 }
 
 .custom-nav .nav-link:hover {
-  color: #441bfc !important;
+  color: #6c4ef3 !important;
 }
 
 .custom-link {

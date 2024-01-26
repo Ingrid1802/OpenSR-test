@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', () => {
   console.log("DOM completamente cargado");
 
-  // Cambia el color al hacer clic
   const tocLinks = document.querySelectorAll('.aside2 #TableOfContents a');
   console.log("Enlaces encontrados:", tocLinks);
 
@@ -53,30 +52,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Cambia el color según la posición del scroll
   window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section');
     console.log("Secciones encontradas:", sections);
 
-    let currentSectionId = '';
-
     sections.forEach(section => {
+      console.log("ID de la sección:", section.id);
       const sectionTop = section.offsetTop;
       if (window.scrollY >= sectionTop - 10) {
-        currentSectionId = section.getAttribute('id');
-        console.log("Sección actual:", currentSectionId);
-      }
-    });
-
-    tocLinks.forEach(link => {
-      link.classList.remove('current-right-link');
-      if (link.getAttribute('href') === `#${currentSectionId}`) {
-        link.classList.add('current-right-link');
-        console.log("Enlace activo actualizado:", link);
+        console.log("Sección activa:", section.id);
+        tocLinks.forEach(link => {
+          link.classList.remove('current-right-link');
+          if (link.getAttribute('href') === `#${section.id}`) {
+            link.classList.add('current-right-link');
+            console.log("Enlace activo actualizado:", link);
+          }
+        });
       }
     });
   });
 });
+
 
 
 
