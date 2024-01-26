@@ -325,10 +325,16 @@ details[open] {
 summary {
   font-weight: bold;
   cursor: pointer;
+  list-style: none;
 }
 
 summary::-webkit-details-marker {
   display: none;
+}
+
+summary::before {
+  content: '►';
+  padding-right: 5px;
 }
 
 /* Agrega estilos para el ícono o marcador que desees utilizar */

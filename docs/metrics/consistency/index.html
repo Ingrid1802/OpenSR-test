@@ -306,7 +306,7 @@
 </li>
 </ul>
 <p><strong>L1 distance</strong>: The L1 distance is the sum of the absolute differences between the two vectors. It is also known as the Manhattan distance.</p>
-<p>$L1(y, ŷ) = \frac{1}{n} \sum_{i=1}^{n} |y_i - ŷ_i|$</p>
+<p>$$L1(y, ŷ) = \frac{1}{n} \sum_{i=1}^{n} |y_i - ŷ_i|$$</p>
 <p><strong>L2 distance</strong>: The L2 distance is the square root of the sum of the squared differences between the two vectors. It is also known as the Euclidean distance.</p>
 <p>$L2(y, ŷ) = \frac{1}{n} \sum_{i=1}^{n} (y_i - ŷ_i)^2$</p>
 <p><strong>Spectral angle distance</strong>: The spectral angle distance is the angle between two vectors. This metric is used to measure the spectral consistency.</p>
@@ -388,14 +388,66 @@
       });
     });
 
+    
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section'); 
+      const navLinks = document.querySelectorAll('.aside2 #TableOfContents a');
+
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 10) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('current-link');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('current-link');
+        }
+      });
+    });
+
+    document.querySelectorAll('.aside2 #TableOfContents a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const target = document.getElementById(targetId);
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        
+      });
+    });
+
+    
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function () {
+        document.querySelectorAll('.nav-link').forEach(navLink => navLink.classList.remove('current-link'));
+        this.classList.add('current-link');
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const path = window.location.pathname;
+      document.querySelectorAll('.nav-link').forEach(link => {
+        if (link.getAttribute('href') === path) {
+          link.classList.add('current-link');
+        }
+      });
+    });
+
+
   </script>
 
-  
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js">
+  </script>
+
 
 </body>
+<script>
+  MathJax.typeset();
+</script>
+
 
 </html>
 

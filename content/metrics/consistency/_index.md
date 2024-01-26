@@ -17,7 +17,7 @@ The consistency metrics are used to evaluate the ability of the super-resolution
 
 **L1 distance**: The L1 distance is the sum of the absolute differences between the two vectors. It is also known as the Manhattan distance. 
 
-$L1(y, ŷ) = \frac{1}{n} \sum_{i=1}^{n} |y_i - ŷ_i|$
+$$L1(y, ŷ) = \frac{1}{n} \sum_{i=1}^{n} |y_i - ŷ_i|$$
 
 **L2 distance**: The L2 distance is the square root of the sum of the squared differences between the two vectors. It is also known as the Euclidean distance.
 
